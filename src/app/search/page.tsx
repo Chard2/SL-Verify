@@ -11,6 +11,8 @@ import {
 import { createClient } from '@/lib/supabase/client'
 import { REGIONS, SECTORS, ITEMS_PER_PAGE } from '@/lib/constants'
 import type { Business, SimilarBusiness } from '@/types'
+import {Header} from '@/components/layout/Header'
+import {Footer} from '@/components/layout/Footer'
 
 export default function SearchPage() {
   const searchParams = useSearchParams()
@@ -166,6 +168,7 @@ export default function SearchPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+      <Header/>
       {/* Hero Search Section */}
       <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white py-16 relative overflow-hidden"
       style={{
@@ -580,7 +583,7 @@ export default function SearchPage() {
           </div>
         </div>
       </div>
-
+<Footer/>
       <style jsx>{`
         .bg-grid-pattern {
           background-image: 

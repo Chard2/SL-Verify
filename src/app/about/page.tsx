@@ -6,6 +6,8 @@ import {
   CheckCircle, TrendingUp, Lock, Zap, Heart, Eye,
   Mail, Phone, MapPin, ArrowRight, Sparkles, Star
 } from 'lucide-react'
+import { Header } from '@/components/layout/Header'
+import { Footer } from '@/components/layout/Footer'
 
 export default function AboutPage() {
   const values = [
@@ -46,6 +48,7 @@ export default function AboutPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+      <Header/>
       {/* Hero Section */}
       <section 
       className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white py-20 overflow-hidden"
@@ -191,7 +194,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
+<Footer/>
       
 
       <style jsx>{`

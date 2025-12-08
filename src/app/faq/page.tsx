@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react'
 import { ChevronDown, HelpCircle } from 'lucide-react'
+import { Header } from '@/components/layout/Header'
+import { Footer } from '@/components/layout/Footer'
 
 interface FAQItem {
   question: string
@@ -65,6 +67,7 @@ export default function FAQPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Header/>
       {/* Hero Section */}
       <section 
       className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16"
@@ -135,6 +138,7 @@ export default function FAQPage() {
           
         </div>
       </section>
+      <Footer/>
     </div>
   )
 }

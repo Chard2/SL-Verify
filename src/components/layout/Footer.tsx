@@ -62,22 +62,22 @@ export function Footer() {
             <h3 className="text-white font-semibold mb-4">For Institutions</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/resources" className="hover:text-white transition-colors text-sm">
+                <Link href="" className="hover:text-white transition-colors text-sm">
                   For Banks
                 </Link>
               </li>
               <li>
-                <Link href="/resources" className="hover:text-white transition-colors text-sm">
+                <Link href="" className="hover:text-white transition-colors text-sm">
                   For Investors
                 </Link>
               </li>
               <li>
-                <Link href="/resources" className="hover:text-white transition-colors text-sm">
+                <Link href="" className="hover:text-white transition-colors text-sm">
                   For Government
                 </Link>
               </li>
               <li>
-                <Link href="/resources" className="hover:text-white transition-colors text-sm">
+                <Link href="" className="hover:text-white transition-colors text-sm">
                   Register Your Business
                 </Link>
               </li>
@@ -98,12 +98,7 @@ export function Footer() {
                   support@sl-verify.gov.sl
                 </a>
               </li>
-              <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4 flex-shrink-0" />
-                <a href="tel:+23276123456" className="hover:text-white transition-colors text-sm">
-                  +232 76 123 456
-                </a>
-              </li>
+              
             </ul>
           </div>
         </div>

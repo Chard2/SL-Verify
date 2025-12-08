@@ -11,7 +11,6 @@ import {
 } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import Image from 'next/image'
 
 interface AdminLayoutProps {
   children: React.ReactNode
@@ -93,15 +92,15 @@ export default function AdminLayout({ children }: AdminLayoutProps) {
                 <img
                   src="/VERIFY.png"
                   alt="VERIFY Logo"
-                  className="w-32 h-32 sm:w-16 sm:h-16"
+                  className="w-16 h-16 lg:h-12 lg:w-20 sm:w-16 sm:h-16"
                   style={{ display: "block" }}
                 />
               </div>
               
               <div>
-                <h2 className="text-lg sm:text-lg font-bold bg-gradient-to-r from-[#4285F4] to-[#1A73E8] bg-clip-text text-transparent leading-tight sm:leading-normal">
+                <p className="text-lg lg:text-3xl sm:text-lg font-bold bg-gradient-to-r from-[#4285F4] to-[#1A73E8] bg-clip-text text-transparent leading-tight sm:leading-normal">
                   SL Verify System
-                </h2>
+                </p>
               </div>
             </div>
             

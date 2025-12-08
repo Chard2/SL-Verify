@@ -20,6 +20,8 @@ import { createClient } from '@/lib/supabase/client'
 import { useRealtimeBusinesses } from '@/lib/hooks/useRealtime'
 import { formatDate, formatPhoneNumber } from '@/lib/utils/formatters'
 import type { Business } from '@/types'
+import { Header } from '@/components/layout/Header'
+import { Footer } from '@/components/layout/Footer'
 
 export default function BusinessProfilePage() {
   const params = useParams()
@@ -162,6 +164,7 @@ export default function BusinessProfilePage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+      <Header/>
       {/* Hero Header */}
       <div className="bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10" style={{backgroundImage: 'linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px)', backgroundSize: '40px 40px'}}></div>
@@ -449,6 +452,7 @@ export default function BusinessProfilePage() {
           </div>
         </div>
       </Modal>
+<Footer/>
 
       <style jsx>{`
         @keyframes blob {

@@ -8,6 +8,9 @@ import {
   Star, BadgeCheck, Sparkles
 } from 'lucide-react'
 import { useRouter } from 'next/navigation'
+import {Header} from '@/components/layout/Header'
+import {Footer} from '@/components/layout/Footer'
+
 
 export default function HomePage() {
   const router = useRouter()
@@ -110,6 +113,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen">
+      <Header/>
       {/* Animated Hero Section with Image and Gradient */}
       <section
         className="relative overflow-hidden text-white py-12 md:py-16 lg:py-20"
@@ -346,6 +350,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
   )
 }

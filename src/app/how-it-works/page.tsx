@@ -4,6 +4,8 @@ import React from 'react'
 import { Search, CheckCircle, Download, Shield, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/Button'
+import { Footer } from '@/components/layout/Footer'
+import { Header } from '@/components/layout/Header'
 
 export default function HowItWorksPage() {
   const steps = [
@@ -53,6 +55,7 @@ export default function HowItWorksPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Header />
       {/* Hero Section */}
       <section 
       className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16"
@@ -182,6 +185,7 @@ export default function HowItWorksPage() {
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
   )
 }
